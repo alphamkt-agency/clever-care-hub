@@ -1,9 +1,7 @@
 import { ArrowRight, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 const CTA = () => {
-  return (
-    <section id="contato" className="py-24 relative overflow-hidden">
+  return <section id="contato" className="py-24 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 gradient-hero opacity-10" />
       <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background" />
@@ -45,20 +43,9 @@ const CTA = () => {
           </div>
 
           {/* Trust Indicators */}
-          <div className="mt-12 pt-8 border-t border-border/30">
-            <p className="text-sm text-muted-foreground mb-4">
-              Junte-se a empresas que já transformaram seu atendimento
-            </p>
-            <div className="flex items-center justify-center gap-8 opacity-50">
-              <div className="w-24 h-8 bg-muted rounded" />
-              <div className="w-24 h-8 bg-muted rounded" />
-              <div className="w-24 h-8 bg-muted rounded" />
-            </div>
-          </div>
+          
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CTA;
