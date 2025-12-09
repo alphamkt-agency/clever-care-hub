@@ -75,7 +75,7 @@ const Hero = () => {
         </div>
 
         {/* Floating Bot Icon */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-float">
+        <div className="hidden lg:block absolute -bottom-8 left-1/2 -translate-x-1/2 animate-float">
           <div className="w-16 h-16 rounded-2xl gradient-primary flex items-center justify-center glow-effect">
             <Bot className="w-8 h-8 text-primary-foreground" />
           </div>
