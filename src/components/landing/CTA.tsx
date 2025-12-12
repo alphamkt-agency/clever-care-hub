@@ -38,7 +38,7 @@ const CTA = () => {
               <ArrowRight className="w-5 h-5" />
             </Button>
             <Button variant="heroOutline" size="xl">
-              Agendar Demonstração
+              Ver Demonstração
             </Button>
           </div>
 
