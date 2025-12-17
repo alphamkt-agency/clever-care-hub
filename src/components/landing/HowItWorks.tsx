@@ -1,29 +1,29 @@
-import { MessageCircle, Bot, UserCheck, Repeat } from "lucide-react";
+import { MessageCircle, Bot, UserCheck, Repeat, Route, Keyboard } from "lucide-react";
 
 const steps = [
   {
     number: "01",
     icon: MessageCircle,
     title: "Cliente Inicia Conversa",
-    description: "O cliente entra em contato pelo WhatsApp e é atendido instantaneamente.",
+    description: "O cliente entra em contato pelo WhatsApp e é atendido instantaneamente via QR Code.",
   },
   {
     number: "02",
-    icon: Bot,
-    title: "IA Processa e Responde",
-    description: "Nossa IA analisa a mensagem e responde de forma natural e humanizada.",
+    icon: Route,
+    title: "Supervisor Analisa e Roteia",
+    description: "A IA Supervisora identifica a intenção e encaminha para o agente especializado correto.",
   },
   {
     number: "03",
-    icon: UserCheck,
-    title: "Intervenção Humana (se necessário)",
-    description: "Colaboradores são notificados quando precisam intervir no atendimento.",
+    icon: Bot,
+    title: "Agente Responde com Humanização",
+    description: "Respostas são 'quebradas' em balões menores com simulação de digitação natural.",
   },
   {
     number: "04",
-    icon: Repeat,
-    title: "Aprendizado Contínuo",
-    description: "O sistema aprende e melhora com cada interação realizada.",
+    icon: UserCheck,
+    title: "Intervenção Humana (se necessário)",
+    description: "Colaboradores são notificados quando precisam intervir no atendimento.",
   },
 ];
 
