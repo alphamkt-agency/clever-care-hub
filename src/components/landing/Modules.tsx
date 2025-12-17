@@ -1,35 +1,41 @@
-import { ShoppingCart, Calendar, Megaphone, HeadphonesIcon, Gift } from "lucide-react";
+import { ShoppingCart, Calendar, Megaphone, HeadphonesIcon, Wrench, Bot } from "lucide-react";
 
 const modules = [
   {
     icon: ShoppingCart,
-    title: "Vendas",
-    description: "Automatize processos de vendas e aumente suas conversões com atendimento personalizado.",
+    title: "Agente de Vendas",
+    description: "Especialista em conversões, qualifica leads e conduz negociações com tom persuasivo e personalizado.",
     color: "from-connexia-magenta to-connexia-pink",
   },
   {
     icon: Calendar,
-    title: "Agendamentos",
-    description: "Gerencie reservas e agendamentos de forma automática e eficiente.",
+    title: "Agente de Agendamentos",
+    description: "Gerencia reservas, confirma horários e envia lembretes automaticamente, sem conflitos de agenda.",
     color: "from-connexia-cyan to-connexia-blue",
   },
   {
     icon: Megaphone,
-    title: "Marketing",
-    description: "Engaje clientes com campanhas personalizadas e mensagens automatizadas.",
+    title: "Agente de Marketing",
+    description: "Engaja leads com campanhas personalizadas, nurture automático e mensagens segmentadas.",
     color: "from-connexia-pink to-connexia-magenta",
   },
   {
     icon: HeadphonesIcon,
-    title: "Suporte",
-    description: "Resolva dúvidas e problemas 24/7 com respostas inteligentes e precisas.",
+    title: "Agente de Suporte",
+    description: "Resolve dúvidas e problemas 24/7 com respostas precisas baseadas na sua base de conhecimento.",
     color: "from-connexia-blue to-connexia-cyan",
   },
   {
-    icon: Gift,
-    title: "Pós-venda",
-    description: "Fidelize clientes com acompanhamento proativo e suporte contínuo.",
+    icon: Wrench,
+    title: "Agente Técnico",
+    description: "Especializado em suporte técnico avançado, troubleshooting e orientações detalhadas.",
     color: "from-connexia-magenta to-connexia-cyan",
+  },
+  {
+    icon: Bot,
+    title: "Crie Seu Agente",
+    description: "Defina personalidade, tom de voz e comportamento único para qualquer função que seu negócio precisar.",
+    color: "from-connexia-cyan to-connexia-magenta",
   },
 ];
 
@@ -44,14 +50,14 @@ const Modules = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-sm font-semibold text-connexia-magenta uppercase tracking-wider">
-            Módulos
+            Agentes Especializados
           </span>
           <h2 className="font-display font-bold text-3xl md:text-5xl text-foreground mt-4 mb-6">
-            Módulos de{" "}
-            <span className="gradient-text">atendimento</span>
+            Times de IA{" "}
+            <span className="gradient-text">orquestrados</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Automatize as tarefas de atendimento nas mais variadas frentes dentro do seu negócio!
+            Crie assistentes com funções únicas. Uma IA Supervisora analisa cada conversa e encaminha automaticamente para o agente certo.
           </p>
         </div>
 
@@ -60,9 +66,7 @@ const Modules = () => {
           {modules.map((module, index) => (
             <div
               key={index}
-              className={`group relative p-8 rounded-3xl bg-card border border-border/50 hover:border-connexia-magenta/50 transition-all duration-500 hover:scale-[1.03] card-shadow overflow-hidden ${
-                index === 4 ? "lg:col-start-2" : ""
-              }`}
+              className="group relative p-8 rounded-3xl bg-card border border-border/50 hover:border-connexia-magenta/50 transition-all duration-500 hover:scale-[1.03] card-shadow overflow-hidden"
             >
               {/* Gradient Background on Hover */}
               <div className={`absolute inset-0 bg-gradient-to-br ${module.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`} />
