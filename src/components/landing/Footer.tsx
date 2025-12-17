@@ -1,11 +1,8 @@
 import { Instagram, Linkedin, Mail, Phone } from "lucide-react";
 import Logo from "@/assets/Logo_ConnexIA.png";
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  return (
-    <footer className="py-12 border-t border-border/30 bg-card/30">
+  return <footer className="py-12 border-t border-border/30 bg-card/30">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Logo & Description */}
@@ -47,7 +44,7 @@ const Footer = () => {
             <div className="flex flex-col gap-3">
               <a href="mailto:contato@connexia.com.br" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
                 <Mail className="w-4 h-4" />
-                <span>contato@connexia.com.br</span>
+                <span>contato@connexiaapp.com.br</span>
               </a>
               <a href="tel:+5511999999999" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
                 <Phone className="w-4 h-4" />
@@ -72,8 +69,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
